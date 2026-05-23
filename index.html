@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>blamebebe.dev</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#0b1120;
+    --card:#111827;
+    --text:#f8fafc;
+    --muted:#94a3b8;
+    --accent:#38bdf8;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:2rem;
+    background:
+        radial-gradient(circle at top left,#1e293b 0%,transparent 40%),
+        radial-gradient(circle at bottom right,#0f172a 0%,transparent 40%),
+        #020617;
+    color:var(--text);
+}
+
+.container{
+    width:100%;
+    max-width:850px;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+.logo a{
+    text-decoration:none;
+    color:white;
+    font-size:clamp(2.5rem,8vw,5rem);
+    font-weight:800;
+    letter-spacing:-2px;
+}
+
+.logo span{
+    color:var(--accent);
+}
+
+.card{
+    background:rgba(17,24,39,.8);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    padding:3rem;
+    backdrop-filter:blur(12px);
+}
+
+.badge{
+    display:inline-block;
+    padding:.5rem .9rem;
+    border-radius:999px;
+    background:rgba(56,189,248,.15);
+    color:var(--accent);
+    font-size:.9rem;
+    margin-bottom:1.5rem;
+}
+
+h1{
+    font-size:2rem;
+    margin-bottom:1rem;
+}
+
+p{
+    color:var(--muted);
+    line-height:1.8;
+}
+
+.terminal{
+    margin:2rem 0;
+    background:#020617;
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,.08);
+    overflow:hidden;
+}
+
+.terminal-header{
+    padding:.8rem 1rem;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    color:#64748b;
+    font-size:.85rem;
+}
+
+.terminal-body{
+    padding:1.2rem;
+    font-family:monospace;
+    line-height:1.8;
+}
+
+.prompt{
+    color:#4ade80;
+}
+
+.output{
+    color:#cbd5e1;
+}
+
+.links{
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+}
+
+.links a{
+    text-decoration:none;
+    color:white;
+    padding:.9rem 1.2rem;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,.1);
+    transition:.2s;
+}
+
+.links a:hover{
+    transform:translateY(-2px);
+    border-color:var(--accent);
+}
+
+.footer{
+    margin-top:2rem;
+    color:#64748b;
+    font-size:.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        <a href="/">
+            blame<span>bebe</span>
+        </a>
+    </div>
+
+    <div class="card">
+
+        <div class="badge">
+            🚧 Portfolio under construction
+        </div>
+
+        <h1>Hi, I'm Manos Kordas.</h1>
+
+        <p>
+            Full Stack Developer focused on Java and Angular.
+            A new portfolio is currently being built.
+        </p>
+
+        <div class="terminal">
+            <div class="terminal-header">
+                ~/blamebebe.dev
+            </div>
+
+            <div class="terminal-body">
+                <div>
+                    <span class="prompt">$ whoami</span>
+                </div>
+                <div class="output">
+                    Manos "Bebe" Kordas
+                </div>
+
+                <br>
+
+                <div>
+                    <span class="prompt">$ portfolio status</span>
+                </div>
+                <div class="output">
+                    Building...
+                </div>
+
+                <br>
+
+                <div>
+                    <span class="prompt">$ expected_release</span>
+                </div>
+                <div class="output">
+                    soon™
+                </div>
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/KordasManos">GitHub</a>
+            <a href="https://linkedin.com">LinkedIn</a>
+        </div>
+
+        <div class="footer">
+            If something breaks, blame Bebe.
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
